@@ -1,0 +1,26 @@
+.quienessomos{
+    h2{
+        padding: 16px;
+    }
+    p{
+        padding: 16px;
+        margin-left: 5%;
+        margin-right: 5%;
+        font-family: 'Cinzel', serif;
+        margin-bottom: 5%;
+    }
+    .carousel-item img{
+        padding: 0 10%;
+        padding-bottom: 2rem;
+        object-fit: cover;
+        height: fit-content;
+    }
+}
+
+.carousel-control-prev{
+    left: 10%;
+}
+.carousel-control-next{
+    right: 10%;
+}
+

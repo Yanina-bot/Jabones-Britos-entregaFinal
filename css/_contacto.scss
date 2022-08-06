@@ -1,0 +1,35 @@
+.pagecontacto{
+    address{
+        margin-left: 25%;
+    }
+    h2{
+    padding: 16px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 50% 50%;
+    row-gap: 16px;
+    }
+    .form-group{
+        font-size: small;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+}
+
+
+.ubicacion{
+    font-family: 'Cinzel', serif;
+    text-shadow: 1px 1px 1px lightslategrey;
+    margin-bottom: 25px;
+    margin-left: 25%;
+    margin-right: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content:center; 
+    object-fit: cover;
+    object-fit: fill;
+    iframe{
+        width: auto;
+        height: 22rem;
+    }
+}

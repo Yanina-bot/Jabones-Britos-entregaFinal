@@ -1,0 +1,48 @@
+.detalleprod{
+    font-family: cursive;
+    margin: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2 auto);
+    gap: 2rem;
+    .imgfrutosrojos{
+        grid-column-start: 1 ;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end:  3;
+        object-fit: cover;
+    }
+    .descripcion{
+        text-align: center;
+        font-family: 'Cinzel', serif;
+        grid-column-start: 2 ;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end:  2;
+        h3{
+            margin: 2rem;
+            font-family: 'Cinzel', serif;    
+        }
+    }
+    .selcantidad{
+        grid-area: selcantidad;
+        grid-column-start: 2 ;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end:  3;
+    }
+    .agregar_carrito button{
+        background-color: #70995E;
+        &:hover{
+            color: #70995E;
+        }
+    }
+}
+
+
+
+ 
+
+
+
+    
