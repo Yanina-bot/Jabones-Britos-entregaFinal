@@ -1,0 +1,11 @@
+@import "variables";
+
+@mixin texto ($tamano, $fuente, $color){
+    font-size: $tamano;
+    font-family: $fuente;
+    color: $color;    
+}
+p{
+    @include texto(16px, 'Cinzel' serif, black );
+    text-align: center;
+}

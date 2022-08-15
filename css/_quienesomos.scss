@@ -1,3 +1,9 @@
+@import "variables";
+@mixin texto ($tamano, $fuente, $color){
+    font-size: $tamano;
+    font-family: $fuente;
+    color: $color;    
+}
 .quienessomos{
     h2{
         padding: 16px;
@@ -8,19 +14,66 @@
         margin-right: 5%;
         font-family: 'Cinzel', serif;
         margin-bottom: 5%;
+        text-align: center;
+        @include texto(16px, 'Cinzel' serif, black );
     }
-    .carousel-item img{
-        padding: 0 10%;
-        padding-bottom: 2rem;
-        object-fit: cover;
-        height: fit-content;
+    .somos{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+        margin: 0 20% 0 20%;
+        margin-bottom: 16px;
+        @if $crearBorde == "si"{
+            @for $i from 1 through 4 {
+                 .card#{$i}{
+                    background-color: map-get($mapaColores, $i );
+                 }
+            }       
+        }   
+        @else if $crearBorde == "no"{
+            @each $numero, $color in $mapaColores {
+                .card#{$numero}{
+                    border: solid 5px $color;
+                }
+            }
+        }
+        @else{
+            div{
+                @extend .card1
+            }
+
+        }
+        .card1,
+        .card2,
+        .card3,
+        .card4 {
+            border-radius: 4px;
+            padding: 16px;
+            box-shadow: 1px 1px 12px 0px rgba(0,0,0,0.3);
+            max-width: 300px;
+            max-width: 400px;
+            text-align: center;
+            align-items: center; 
+        }
+        .avatar {
+            width: 180px;
+            height: 180px;
+            border-radius: 20px;
+            object-fit:contain;
+        }
+        .title{
+            margin-top: 16px;
+            font-size: 20px;
+            letter-spacing: 12px;
+            opacity: 0.85;
+            
+        }
+        .small{
+            font-size: 12px;
+            opacity: 0.75;
+        }
     }
 }
 
-.carousel-control-prev{
-    left: 10%;
-}
-.carousel-control-next{
-    right: 10%;
-}
+
 

@@ -86,23 +86,65 @@
   margin-right: 5%;
   font-family: "Cinzel", serif;
   margin-bottom: 5%;
+  text-align: center;
+  font-size: 16px;
+  font-family: "Cinzel" serif;
+  color: black;
 }
-.quienessomos .carousel-item img {
-  padding: 0 10%;
-  padding-bottom: 2rem;
-  -o-object-fit: cover;
-     object-fit: cover;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
+.quienessomos .somos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin: 0 20% 0 20%;
+  margin-bottom: 16px;
+}
+.quienessomos .somos .card1 {
+  border: solid 5px rgba(253, 241, 175, 0.733);
+}
+.quienessomos .somos .card2 {
+  border: solid 5px rgba(243, 209, 124, 0.71);
+}
+.quienessomos .somos .card3 {
+  border: solid 5px rgba(207, 153, 99, 0.71);
+}
+.quienessomos .somos .card4 {
+  border: solid 5px rgba(119, 164, 100, 0.71);
+}
+.quienessomos .somos .card1,
+.quienessomos .somos .card2,
+.quienessomos .somos .card3,
+.quienessomos .somos .card4 {
+  border-radius: 4px;
+  padding: 16px;
+  box-shadow: 1px 1px 12px 0px rgba(0, 0, 0, 0.3);
+  max-width: 300px;
+  max-width: 400px;
+  text-align: center;
+  align-items: center;
+}
+.quienessomos .somos .avatar {
+  width: 180px;
+  height: 180px;
+  border-radius: 20px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.quienessomos .somos .title {
+  margin-top: 16px;
+  font-size: 20px;
+  letter-spacing: 12px;
+  opacity: 0.85;
+}
+.quienessomos .somos .small {
+  font-size: 12px;
+  opacity: 0.75;
 }
 
-.carousel-control-prev {
-  left: 10%;
-}
-
-.carousel-control-next {
-  right: 10%;
+p {
+  font-size: 16px;
+  font-family: "Cinzel" serif;
+  color: black;
+  text-align: center;
 }
 
 * {
@@ -113,7 +155,7 @@
 }
 
 h2 {
-  color: #77a464;
+  color: rgba(119, 164, 100, 0.993);
   text-align: center;
   font-style: italic;
   padding-top: 16px;
@@ -177,7 +219,7 @@ header h1 {
   list-style: none;
 }
 .menu a:hover {
-  color: #70995E;
+  color: rgba(119, 164, 100, 0.993);
   font-size: 18px;
   text-shadow: 1px 1px 1px lightslategrey;
 }
@@ -261,7 +303,7 @@ header h1 {
   flex-wrap: wrap;
   font-family: "Cinzel", serif;
   text-shadow: 1px 1px 1px lightslategrey;
-  color: #77a464;
+  color: rgba(119, 164, 100, 0.993);
   overflow: hidden;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -272,7 +314,7 @@ header h1 {
 .misprod a {
   text-decoration: none;
   /*height: 10px;*/
-  color: #77a464;
+  color: rgba(119, 164, 100, 0.993);
 }
 .misprod h5,
 .misprod h6 {
@@ -286,7 +328,6 @@ header h1 {
   margin: 20px;
 }
 .misprod div img {
-  border-radius: 20%;
   display: block;
   margin: auto;
 }
@@ -337,30 +378,19 @@ footer img {
     -o-object-fit: cover;
        object-fit: cover;
   }
+  .quienessomos .somos {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin: 0 5% 0 5%;
+    margin-bottom: 16px;
+  }
   .quienessomos p {
-    font-size: 500px;
     margin-top: 0;
     padding: 0;
-    height: -webkit-max-content;
-    height: -moz-max-content;
-    height: max-content;
   }
   .quienessomos h2 {
     height: 16px;
-  }
-  .gallery-container img {
-    display: block;
-  }
-  .gallery__item:nth-child(2),
-.gallery__item:nth-child(6) {
-    display: none;
-  }
-  .gallery__item img {
-    border-radius: 16px;
-    padding: 10px;
-  }
-  .gallery__item img:hover {
-    transform: scale(1.3);
   }
   .social-bar {
     margin: 0;
@@ -509,8 +539,19 @@ footer img {
     display: flex;
     flex-direction: column;
   }
+  .quienessomos .somos {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin: 0 10% 0 25%;
+    margin-bottom: 16px;
+  }
   .quienessomos p {
-    font-size: 12px;
+    margin-top: 16px;
+    padding: 0;
+  }
+  .quienessomos h2 {
+    height: 16px;
   }
   .social-bar {
     display: flex;
