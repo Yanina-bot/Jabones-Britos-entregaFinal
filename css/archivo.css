@@ -210,7 +210,7 @@ header h1 {
   font-family: "Cinzel", serif;
   font-weight: 90px;
   font-weight: bolder;
-  background-color: hwb(34 84% 2%);
+  background-color: rgba(250, 234, 214, 0.596);
 }
 .menu a {
   color: #77a464;
@@ -249,7 +249,7 @@ header h1 {
   /*position: absolute;*/
   margin: 0% 10%;
   opacity: 60%;
-  height: auto;
+  height: 100%;
 }
 .frontpage1 .carousel-item img {
   height: 400px;
@@ -337,6 +337,7 @@ header h1 {
 
 footer {
   background-color: hwb(34 84% 2%);
+  text-decoration: none;
 }
 footer img {
   height: 9rem;
@@ -352,8 +353,11 @@ footer img {
   /*nav {
     display: none;
   }*/
+  p {
+    font-size: 10px;
+  }
   h2 {
-    font-size: medium;
+    font-size: 20px;
   }
   footer {
     display: flex;
@@ -388,9 +392,13 @@ footer img {
   .quienessomos p {
     margin-top: 0;
     padding: 0;
+    font-size: 12px;
   }
   .quienessomos h2 {
-    height: 16px;
+    height: 20px;
+  }
+  .quienessomos h3 {
+    font-size: 12px;
   }
   .social-bar {
     margin: 0;
@@ -512,13 +520,6 @@ footer img {
   .misprod {
     margin: 0%;
   }
-  .detallejabon {
-    display: block;
-    flex-direction: column;
-  }
-  .detallejabon h2 {
-    margin-top: 16px;
-  }
   .imgfrutosrojos img {
     width: auto;
     height: auto;
@@ -528,8 +529,11 @@ footer img {
   .detalleprod {
     display: block;
   }
-  .descripcion {
+  .detalleprod .descripcion {
     font-size: 12px;
+  }
+  .detalleprod .descripcion p {
+    font-size: 16px;
   }
   .selcantidad,
 .cantidad,

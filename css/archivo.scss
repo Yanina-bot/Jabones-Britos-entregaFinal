@@ -72,7 +72,7 @@ header{
     font-family: 'Cinzel', serif;
     font-weight: 90px;
     font-weight: bolder;
-    background-color: hwb(34 84% 2%);
+    background-color: rgba(250, 234, 214, 0.596);
     a{
         color:#77a464;
         font-weight: lighter;
@@ -109,7 +109,7 @@ header{
     /*position: absolute;*/
     margin: 0% 10%;
     opacity: 60%;
-    height: auto;
+    height: 100%;
     .carousel-item img{
         height: 400px;
      }
@@ -201,6 +201,7 @@ header{
 
 footer{
     background-color: hwb(34 84% 2%);
+    text-decoration: none;
     img{
         height: 9rem;
         opacity: 70%;
@@ -218,9 +219,11 @@ footer{
     /*nav {
       display: none;
     }*/
-    
+    p{
+        font-size: 10px;
+    }
     h2{
-        font-size: medium;
+        font-size: 20px;
     }
     footer{
         display: flex;
@@ -256,10 +259,13 @@ footer{
         p{
             margin-top: 0;
             padding: 0;
-            
+            font-size: 12px;
         }
         h2{
-            height: 16px;
+            height: 20px;
+        }
+        h3{
+            font-size: 12px;
         }
     }
     
@@ -387,13 +393,7 @@ footer{
     .misprod{
         margin: 0%;
    }
-   .detallejabon{
-        display: block;
-        flex-direction: column;
-   }
-   .detallejabon h2{
-        margin-top: 16px;
-   }
+      
    .imgfrutosrojos img{
         width: auto;
         height: auto;
@@ -402,10 +402,15 @@ footer{
    }
    .detalleprod{
     display: block;
+    .descripcion{
+        font-size: 12px;
+        p{
+            font-size: 16px;
+        }
+    }
+        
    }
-   .descripcion{
-    font-size: 12px;
-   }
+   
    .selcantidad,
    .cantidad,
    .agregar_carrito{
