@@ -82,6 +82,7 @@ header{
             color: $verde;
             font-size: 18px;
             text-shadow: 1px 1px 1px lightslategrey;  
+            
         }
     }
 }
@@ -114,7 +115,7 @@ header{
         height: 400px;
      }
     .botonprod{ 
-        position: relative /* o absolute*/;
+        position: relative /*o absolute;*/;
         width:200px;
         z-index: 99;
         font-family:'Cinzel', serif;
@@ -129,6 +130,10 @@ header{
         top: 250px;
         right: 40%;
         left: 40%;
+        border: thick double $maiz;
+        &:hover {
+            -webkit-transform:scale(1.2);transform:scale(1.2);
+        }
         a{
             /*display:flex;
             flex-direction: row;*/
@@ -140,7 +145,6 @@ header{
             position: static;*/
             text-align: center;
             &:hover{
-                color: grey;
                 font-size: 16px;
             }
         }
@@ -296,9 +300,9 @@ footer{
         margin: 0%;
    }
    .imgfrutosrojos img{
-        width: auto;
-        height: 160px;
-   }
+    width: auto;
+    height: 160px;
+}
    .detalleprod{
     display: block;
    }
@@ -345,6 +349,10 @@ footer{
    .carousel-item img{
     height: 200px;
    }
+}
+.selecciona h6,
+.cantidad h6{
+    font-size: 5px;
 }
 
 @media (min-width: 321px) and (max-width: 768px) {
@@ -395,11 +403,13 @@ footer{
    }
       
    .imgfrutosrojos img{
-        width: auto;
+        width: 300px;
         height: auto;
         margin-left: 5%;
         border-radius: 16px;
+        margin-left: 25%;
    }
+
    .detalleprod{
     display: block;
     .descripcion{
@@ -437,11 +447,20 @@ footer{
         height: 16px;
     }
 }
+    .card1,
+    .card2,
+    .card3,
+    .card4{
+        place-items: center;
+        margin-right: 15%;
+   
+        }
+
     .social-bar{
     display: flex;
     margin: 0%;
     }
-    footer img{
+    footer .container img{
         display: none;
     }
     .carousel-item img{

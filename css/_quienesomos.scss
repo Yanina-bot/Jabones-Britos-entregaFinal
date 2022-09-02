@@ -20,7 +20,7 @@
     .somos{
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 16px;
+        gap: 20px;
         margin: 0 20% 0 20%;
         margin-bottom: 16px;
         @if $crearBorde == "si"{
